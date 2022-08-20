@@ -665,7 +665,12 @@ body {
   }
 
   .header {
-    padding: 10px;
+    .container {
+      padding: 0;
+    }
+  }
+
+  .header {
     .nav {
       display: none;
     }
@@ -688,7 +693,7 @@ body {
   }
 
   .subheader_mobile {
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center;
     display: block;
 
@@ -706,7 +711,7 @@ body {
         font-weight: 500;
         font-size: 60px;
         line-height: 73px;
-        margin: 70px 0 0;
+        margin: 10px 0 0;
       }
 
       p {
@@ -1069,7 +1074,7 @@ body {
     cursor: pointer;
     display: none;
     right: 15px;
-    top: 25px;
+    top: 15px;
 
     &__line {
       width: 100%;
@@ -1188,7 +1193,7 @@ body {
 @media screen and (max-width: 414px) {
   .form {
     max-width: 90%;
-    z-index: 1;
+    z-index: 4;
 
     .button {
       padding: 18px 97px;
