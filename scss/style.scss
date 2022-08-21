@@ -493,24 +493,26 @@ body {
 }
 
 .footer {
-  margin: 180px 0 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  color: #fff;
+  margin-top: 150px;
+  font-family: "Roboto", sans-serif;
 
-  a {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-  }
+  &__content {
+    padding: 35px 0;
+    text-align: center;
+    max-width: 480px;
+    margin: 0 auto;
 
-  p {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    a {
+      color: #fff;
+      margin: 0 10px;
+    }
   }
 }
 
@@ -555,6 +557,58 @@ body {
 }
 
 .privacy_policy.open {
+  display: block;
+}
+
+.terminos_y_condiciones {
+  color: #fff;
+  max-width: 1110px;
+  margin: 0 auto;
+  background: #000000;
+  border-radius: 10px;
+
+  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 90%;
+  padding: 30px 0;
+  display: none;
+  z-index: 100;
+
+  width: 95%;
+
+  h6 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 0 30px;
+  }
+
+  .text {
+    overflow-y: scroll;
+    height: 100%;
+  }
+
+  p {
+    margin: 7px 0 20px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 0 30px;
+  }
+
+  svg {
+    position: absolute;
+    top: 9px;
+    right: 30px;
+    cursor: pointer;
+  }
+}
+
+.terminos_y_condiciones.open {
   display: block;
 }
 
@@ -1058,10 +1112,29 @@ body {
   }
 
   .footer {
-    flex-direction: column;
-    margin-top: 90px;
-  }
+    margin-top: 50px;
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      max-width: 320px;
+      margin: 10px auto 10px;
+    }
 
+    &__flex {
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      margin: 10px 0;
+    }
+
+    .p_copyright {
+      margin-bottom: 0;
+      max-width: 344px;
+    }
+  }
   .burger {
     width: 25px;
     height: 25px;
