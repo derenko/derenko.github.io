@@ -1168,6 +1168,11 @@ body {
         margin-bottom: 24px;
         text-decoration: none;
         display: block;
+        transition: 0.3s;
+      }
+
+      a:hover {
+        color: #ffc412;
       }
     }
 
