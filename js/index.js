@@ -1,8 +1,10 @@
+const accordions = document.querySelectorAll(".answers_flex");
+
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
-  slidesPerView: 1.2,
-  spaceBetween: 10,
+  slidesPerView: 1.1,
+  spaceBetween: 5,
   navigation: {
     nextEl: ".arrow_right",
     prevEl: ".arrow_left",
@@ -17,41 +19,41 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-const range = document.querySelector(".range");
-const thumb = range.querySelector("span");
+const ranges = document.querySelectorAll(".range");
+const thumbs = document.querySelectorAll(".range span");
 
 const SLIDES_LENGTH = swiper.loopedSlides;
-const RANGE_WIDTH = range.clientWidth;
-const step = RANGE_WIDTH / SLIDES_LENGTH;
 
 swiper.on("slideChange", (swiper) => {
   const index = swiper.realIndex;
-  thumb.style.width = `${step}px`;
-  thumb.style.left = `${index * step}px`;
-  console.log(swiper);
-});
+  ranges.forEach((range, i) => {
+    const RANGE_WIDTH = range.clientWidth;
+    const step = RANGE_WIDTH / 3;
 
-const accordions = document.querySelectorAll(".answers_flex");
-
-accordions.forEach((accordion) => {
-  accordion.addEventListener("click", (e) => {
-    if (accordion.classList.contains("open")) {
-      accordion.classList.remove("open");
-      accordion.style.height = `${accordion.getAttribute("data-height")}px`;
-    } else {
-      accordion.classList.add("open");
-      accordion.style.height = `${accordion.getAttribute(
-        "data-expanded-height"
-      )}px`;
-    }
+    thumbs[i].style.width = `${step}px`;
+    thumbs[i].style.left = `${index * step}px`;
   });
 });
 
 document.addEventListener("DOMContentLoaded", () => {
   accordions.forEach((accordion) => {
-    const expandedHeight = accordion.clientHeight;
+    const expandedHeight = accordion.offsetHeight;
+    const closedHeight = accordion.querySelector("p").offsetHeight;
+    console.log({ expandedHeight, closedHeight });
     accordion.setAttribute("data-expanded-height", expandedHeight);
-    const height = accordion.getAttribute("data-height");
-    accordion.style.height = `${height}px`;
+    accordion.setAttribute("data-height", closedHeight);
+    accordion.style.height = `${closedHeight}px`;
+
+    accordion.addEventListener("click", (e) => {
+      if (accordion.classList.contains("open")) {
+        accordion.classList.remove("open");
+        accordion.style.height = `${accordion.getAttribute("data-height")}px`;
+      } else {
+        accordion.classList.add("open");
+        accordion.style.height = `${accordion.getAttribute(
+          "data-expanded-height"
+        )}px`;
+      }
+    });
   });
 });
