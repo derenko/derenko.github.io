@@ -151,7 +151,7 @@ body {
     font-size: 48px;
     line-height: 57.6px;
     color: #e4e4f1;
-    margin: 0;
+    margin: 0 0 30px;
 
     &::before {
       content: "";
@@ -704,17 +704,14 @@ body {
       margin: 32px 0;
 
       p {
-        color: #e4e4f1;
         margin: 0;
-      }
-
-      p:hover {
         color: #ffc412;
       }
 
       a {
         text-decoration: none;
         color: #e4e4f1;
+        transition: 0.3s;
       }
 
       a:hover {
@@ -761,6 +758,11 @@ body {
       display: block;
       text-decoration: none;
       margin-bottom: 12px;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: #ffc412;
     }
   }
 
@@ -862,13 +864,7 @@ body {
       font-size: 28px;
       line-height: 33.6px;
       max-width: 248px;
-    }
-
-    p {
-      margin: 16px 0 30px;
-      font-size: 18px;
-      line-height: 27.9px;
-      max-width: 334px;
+      margin-bottom: 30px;
     }
 
     &__flex {
@@ -909,7 +905,9 @@ body {
     margin-top: -125px;
     position: relative;
     overflow-x: hidden;
-    padding: 100px 0 0;
+    padding: 140px 0 0;
+    width: 100%;
+    overflow-y: hidden;
 
     .yellow,
     .violet {
