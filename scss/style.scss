@@ -140,7 +140,14 @@ body {
   border: 1px solid #ffc412;
   border-radius: 12px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
+  transition: 0.3s;
+  position: relative;
+}
+
+.button:hover {
+  background: #ffc412;
+  color: black;
 }
 
 .exchange {
@@ -905,15 +912,19 @@ body {
     margin-top: -125px;
     position: relative;
     overflow-x: hidden;
-    padding: 140px 0 0;
+    padding: 225px 0 0;
     width: 100%;
     overflow-y: hidden;
 
     .yellow,
     .violet {
-      width: 135%;
+      width: 100%;
       height: 70px;
-      left: -10%;
+      left: 0;
+
+      position: absolute;
+      left: 50%;
+      top: 50%;
 
       p {
         font-size: 22px;
@@ -922,11 +933,11 @@ body {
     }
 
     .yellow {
-      transform: rotate(20deg);
+      transform: translate(-50%, -50%) rotate(20deg);
     }
 
     .violet {
-      transform: rotate(-18deg);
+      transform: translate(-50%, -50%) rotate(-20deg);
     }
   }
   .benefits {
@@ -1067,6 +1078,7 @@ body {
   .questions {
     margin-top: 40px;
     flex-direction: column;
+    overflow-x: hidden;
 
     &__head {
       margin: 0 0 50px;
@@ -1147,7 +1159,7 @@ body {
 
     .footer__link {
       margin: 24px 0;
-      color: #a2a1bd;
+      color: #ffc412;
       line-height: 30px;
       font-size: 24px;
 
