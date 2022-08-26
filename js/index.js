@@ -1,10 +1,17 @@
 const accordions = document.querySelectorAll(".answers_flex");
+const ranges = document.querySelectorAll(".range");
+const thumbs = document.querySelectorAll(".range span");
+
+AOS.init({
+  once: true,
+});
 
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
   slidesPerView: 1.1,
   spaceBetween: 5,
+  speed: 500,
   navigation: {
     nextEl: ".arrow_right",
     prevEl: ".arrow_left",
@@ -18,9 +25,6 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
-
-const ranges = document.querySelectorAll(".range");
-const thumbs = document.querySelectorAll(".range span");
 
 const SLIDES_LENGTH = swiper.loopedSlides;
 

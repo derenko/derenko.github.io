@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700&display=swap"
@@ -19,6 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
     />
+
     <title>DTX</title>
   </head>
   <body>
@@ -26,22 +28,42 @@
       <section class="instruction">
         <div class="instruction__flex">
           <div class="content">
-            <h2>
+            <h2 data-aos="bounce-in" data-aos-duration="1000">
               Покупайте <b> USDT TRC20 за гривну Приват24 </b> моментально
             </h2>
-            <p>
+            <p
+              data-aos="bounce-in"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
               Обменивайте криптовалюту USDT TRC20 за гривны в Украине с карты
               Приватбанка на выгодных условиях.
             </p>
             <div class="button_text_flex">
-              <button class="button">Инструкция</button>
-              <p>
+              <button
+                class="button"
+                data-aos="bounce-in"
+                data-aos-duration="1000"
+                data-aos-delay="400"
+              >
+                Инструкция
+              </button>
+              <p
+                data-aos="bounce-in"
+                data-aos-duration="1000"
+                data-aos-delay="600"
+              >
                 У вас нет кошелька USDT? <br />
                 Изучите инструкцию как создать его.
               </p>
             </div>
           </div>
-          <div class="img">
+          <div
+            class="img"
+            data-aos="bounce-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             <img src="./img/iPhone.png" alt="" />
           </div>
         </div>
@@ -59,7 +81,13 @@
 
     <div class="container">
       <section class="exchange">
-        <h3>Выполните обмен <b>в 3 простых клика</b></h3>
+        <h3 data-aos="bounce-in" data-aos-duration="1000">
+          Выполните обмен
+          <b
+            >в 3 простых
+            <img class="mouse_icon" src="./img/mouse.png" alt="" /> клика</b
+          >
+        </h3>
 
         <div class="exchange__flex">
           <div class="exchange__block">
@@ -136,7 +164,7 @@
       <section class="reviews">
         <div class="reviews__flex">
           <div class="reviews__content">
-            <h5>
+            <h5 data-aos="bounce-in" data-aos-duration="1000">
               Что
               <img src="./img/Comment_right.png" alt="" />
               говорят про нас на Trunspilot
@@ -197,7 +225,11 @@
                 <div class="swiper-wrapper">
                   <!-- Slides -->
                   <div class="swiper-slide">
-                    <div class="reviews__carousel__block">
+                    <div
+                      class="reviews__carousel__block"
+                      data-swiper-animation="animate__fadeIn"
+                      data-duration=".5s"
+                    >
                       <p>
                         Значимость этих проблем настолько очевидна, что
                         дальнейшее развитие различных форм деятельности
@@ -261,7 +293,11 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="reviews__carousel__block">
+                    <div
+                      class="reviews__carousel__block"
+                      data-swiper-animation="animate__fadeIn"
+                      data-duration=".5s"
+                    >
                       <p>
                         Значимость этих проблем настолько очевидна, что
                         дальнейшее развитие различных форм деятельности
@@ -325,7 +361,11 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="reviews__carousel__block">
+                    <div
+                      class="reviews__carousel__block"
+                      data-swiper-animation="animate__fadeIn"
+                      data-duration=".5s"
+                    >
                       <p>
                         Значимость этих проблем настолько очевидна, что
                         дальнейшее развитие различных форм деятельности
@@ -403,7 +443,7 @@
 
     <div class="container">
       <section class="reliability">
-        <h5>
+        <h5 data-aos="bounce-in" data-aos-duration="1000">
           Всегда <img src="./img/reliability_links.png" alt="" /> надежный и
           безопасный обмен
         </h5>
@@ -439,7 +479,9 @@
     <div class="container">
       <section class="questions">
         <div class="questions__head">
-          <h5>Получите доступные ответы на частые вопросы</h5>
+          <h5 data-aos="bounce-in" data-aos-duration="1000">
+            Получите доступные ответы на частые вопросы
+          </h5>
           <p>
             Большинство ответов о работе платформы можно получить в блоке частых
             вопросов
@@ -629,7 +671,13 @@
 
     <div class="container">
       <section class="about">
-        <h6>О платформе DTX.CAPITAL.</h6>
+        <h6
+          data-aos="bounce-in"
+          data-aos-duration="500"
+          data-aos-anchor=".questions__answers"
+        >
+          О платформе DTX.CAPITAL.
+        </h6>
 
         <p>
           Не следует, однако забывать, что реализация намеченных плановых
@@ -1111,7 +1159,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
   </body>
