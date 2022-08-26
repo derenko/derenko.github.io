@@ -1196,4 +1196,54 @@ body {
 }
 .swiper-slide.swiper-slide-prev .reviews__carousel__block {
   opacity: 0;
+}
+
+/* Make it a marquee */
+.marquee {
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  position: relative;
+}
+.marquee .content {
+  animation: marquee 30s linear infinite;
+  position: absolute;
+  left: 0;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+.marquee_reverse {
+  animation: marquee-reverse 30s linear infinite;
+}
+.marquee_reverse .content {
+  right: 0;
+  left: auto;
+}
+
+/* Make it move */
+@keyframes marquee {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes marquee-reverse {
+  0% {
+    right: 0%;
+  }
+  50% {
+    right: -100%;
+  }
+  100% {
+    right: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
