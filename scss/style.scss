@@ -105,7 +105,7 @@ body {
 
     img {
       vertical-align: middle;
-      animation: swing 2s infinite linear;
+      max-width: 35px;
     }
 
     &::after {
@@ -336,6 +336,7 @@ body {
 
   img {
     vertical-align: middle;
+    width: 60px;
   }
 
   &::after {
@@ -515,6 +516,7 @@ body {
 
     img {
       vertical-align: middle;
+      max-width: 50px;
     }
   }
 
@@ -1329,7 +1331,7 @@ body {
 
 [data-aos="bounce-in"] {
   opacity: 0;
-  transform: rotate(10deg) scaleY(0.9) translateY(50px);
+  transform: rotate(5deg) scaleY(0.9) translateY(25px);
   transition-property: transform, opacity;
 
   &.aos-animate {
