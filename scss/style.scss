@@ -186,7 +186,7 @@ body {
     font-weight: 400;
     font-size: 20px;
     color: #a2a1bd;
-    line-height: 31px;
+    line-height: 24.8px;
     max-width: 950px;
     margin: 12px 0 60px;
   }
@@ -639,6 +639,37 @@ body {
       top: -335px;
     }
 
+    .close {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+
+      position: absolute;
+      right: 20px;
+      top: 20px;
+
+      .first {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 2px;
+        height: 50%;
+        background: #ffdb5c;
+        transition: 0.3s;
+      }
+
+      .second {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
+        height: 50%;
+        background: #ffdb5c;
+        width: 2px;
+      }
+    }
+
     .answers_flex {
       transition: 0.3s;
 
@@ -665,6 +696,20 @@ body {
 
       .minus {
         display: none;
+      }
+
+      .close {
+        .second {
+          background: #16171d;
+        }
+
+        .first {
+          transform: translate(-50%, -50%) rotate(90deg);
+        }
+      }
+
+      p {
+        color: #16171d;
       }
     }
 
