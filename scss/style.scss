@@ -222,6 +222,7 @@ body {
 
     img {
       border-radius: 16px;
+      width: 100%;
     }
 
     h6 {
@@ -306,6 +307,12 @@ body {
     margin-bottom: 20px;
     max-height: 140px;
     border-top: 1px solid #595972;
+
+    img {
+      max-width: 70px;
+      max-height: 70px;
+      object-fit: contain;
+    }
 
     p {
       font-weight: 600;
