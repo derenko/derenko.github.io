@@ -39,6 +39,14 @@ body {
     display: flex;
     align-items: center;
 
+    .img {
+      margin-right: 10px;
+
+      img {
+        width: 377.28px;
+      }
+    }
+
     .content {
       margin-right: 100px;
       position: relative;
@@ -97,7 +105,7 @@ body {
     box-shadow: 0px -34px 210px #13141b;
     border-radius: 24px;
     padding: 40px 80px 40px 40px;
-    margin-top: -10px;
+    top: -20px;
     width: 100%;
     z-index: 3;
     position: relative;
@@ -152,7 +160,7 @@ body {
 }
 
 .exchange {
-  margin-top: 130px;
+  margin-top: 100px;
 
   h3 {
     font-weight: 600;
@@ -326,6 +334,11 @@ body {
   .benefits__block_first {
     p {
       margin-left: 10px;
+    }
+
+    img {
+      max-width: 85px;
+      max-height: 85px;
     }
   }
 }
@@ -712,6 +725,13 @@ body {
 
       p {
         color: #16171d;
+        font-size: 20px;
+        line-height: 31px;
+        font-weight: 400;
+      }
+
+      .q {
+        font-weight: 600;
       }
     }
 
@@ -748,7 +768,7 @@ body {
   p {
     font-weight: 400;
     font-size: 14px;
-    color: #d0d4ea;
+    color: #a2a1bd;
     line-height: 25.2px;
     margin: 0 0 20px;
     font-family: "Inter", sans-serif;
@@ -1324,6 +1344,22 @@ body {
     }
 
     p {
+      line-height: 21.6px;
+    }
+  }
+
+  .answers_flex {
+    padding: 20px;
+  }
+
+  .answers_flex.open {
+    p {
+      font-size: 16px;
+      line-height: 24.8px;
+    }
+
+    .q {
+      font-size: 18px;
       line-height: 21.6px;
     }
   }
