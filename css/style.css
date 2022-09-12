@@ -156,8 +156,6 @@ body {
 .exchange h3 .mouse_icon {
   vertical-align: middle;
   animation: zoom-in 2s infinite linear;
-}
-.exchange h3 .mouse_icon img {
   width: 38px;
 }
 .exchange h3::before {

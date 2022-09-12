@@ -173,10 +173,7 @@ body {
     .mouse_icon {
       vertical-align: middle;
       animation: zoom-in 2s infinite linear;
-
-      img {
-        width: 38px;
-      }
+      width: 38px;
     }
 
     &::before {
