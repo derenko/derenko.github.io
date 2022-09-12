@@ -157,6 +157,9 @@ body {
   vertical-align: middle;
   animation: zoom-in 2s infinite linear;
 }
+.exchange h3 .mouse_icon img {
+  width: 38px;
+}
 .exchange h3::before {
   content: "";
   background-image: url("../img/grid.png");
@@ -320,6 +323,12 @@ body {
   top: -100px;
   z-index: -1;
 }
+@media screen and (max-width: 414px) {
+  .reviews::after {
+    width: 100%;
+    left: 0;
+  }
+}
 .reviews__flex {
   display: flex;
   align-items: flex-start;
@@ -335,6 +344,13 @@ body {
   left: -125px;
   top: 50px;
   z-index: -1;
+}
+@media screen and (max-width: 414px) {
+  .reviews__content::before {
+    top: 120px;
+    left: -100px;
+    background-size: contain;
+  }
 }
 .reviews__content h5 {
   color: #e4e4f1;
@@ -617,6 +633,18 @@ body {
   max-width: 512px;
   margin: 0;
   padding: 0 0 20px;
+}
+@media screen and (max-width: 400px) {
+  .questions__answers .answers_flex p {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .questions__answers .answers_flex p {
+    font-size: 18px;
+    margin-right: 10px;
+  }
 }
 .questions__answers .answers_flex.open {
   background-color: #8c8fe6;

@@ -173,6 +173,10 @@ body {
     .mouse_icon {
       vertical-align: middle;
       animation: zoom-in 2s infinite linear;
+
+      img {
+        width: 38px;
+      }
     }
 
     &::before {
@@ -361,6 +365,11 @@ body {
     left: -150px;
     top: -100px;
     z-index: -1;
+
+    @media screen and (max-width: 414px) {
+      width: 100%;
+      left: 0;
+    }
   }
 
   &__flex {
@@ -380,6 +389,12 @@ body {
       left: -125px;
       top: 50px;
       z-index: -1;
+
+      @media screen and (max-width: 414px) {
+        top: 120px;
+        left: -100px;
+        background-size: contain;
+      }
     }
 
     h5 {
@@ -703,6 +718,16 @@ body {
         max-width: 512px;
         margin: 0;
         padding: 0 0 20px;
+
+        @media screen and (max-width: 400px) {
+          font-size: 20px;
+          margin-right: 10px;
+        }
+
+        @media screen and (max-width: 380px) {
+          font-size: 18px;
+          margin-right: 10px;
+        }
       }
     }
 
