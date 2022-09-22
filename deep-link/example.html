@@ -25,6 +25,8 @@
   <body>
     <script src="./browser-deeplink.js" type="text/javascript"></script>
 
+    <a href="#" class="link"> instagram </a>
+
     <script type="text/javascript">
       const isDesktop = () => {
         const navigatorAgent =
@@ -39,7 +41,8 @@
         );
       };
 
-      window.addEventListener("DOMContentLoaded", () => {
+      document.querySelector(".link").addEventListener("click", (e) => {
+        e.preventDefault();
         const fallback = "https://instagram.com/v_derenko";
         const profileInApp = "instagram://user?username=v_derenko";
 
