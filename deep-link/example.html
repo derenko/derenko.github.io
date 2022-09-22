@@ -55,11 +55,7 @@
           },
         });
 
-        if (isDesktop()) {
-          window.location.href = fallback;
-        } else {
-          deeplink.open(profileInApp);
-        }
+        deeplink.open(profileInApp);
       });
     </script>
   </body>
