@@ -39,10 +39,10 @@
         );
       };
 
-      const fallback = "https://instagram.com/ukraine";
-      const profileInApp = "instagram://user?username=ukraine";
-
       window.addEventListener("DOMContentLoaded", () => {
+        const fallback = "https://instagram.com/ukraine";
+        const profileInApp = "instagram://user?username=ukraine";
+
         deeplink.setup({
           iOS: {
             appId: "389801252",
