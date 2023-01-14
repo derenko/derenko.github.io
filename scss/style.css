@@ -1,0 +1,444 @@
+@font-face {
+  font-family: Proxima;
+  font-weight: 400;
+  src: url("../fonts/ProximaNova-Regular.ttf");
+}
+@font-face {
+  font-family: Proxima;
+  font-weight: 600;
+  src: url("../fonts/ProximaNova-Semibold.ttf");
+}
+@font-face {
+  font-family: Proxima;
+  font-weight: 700;
+  src: url("../fonts/ProximaNova-Bold.ttf");
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0f1213;
+  font-family: "Proxima";
+}
+
+.container-desktop {
+  width: 1216px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.onboarding {
+  padding: 80px 80px 60px 77px;
+  margin: 40px 0;
+  background: #15191b;
+  border-radius: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  height: 590px;
+  overflow: hidden;
+}
+.onboarding .next {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.onboarding .back {
+  position: absolute;
+  position: absolute;
+  left: -100px;
+  bottom: -100px;
+  border-radius: 60px;
+  width: 434px;
+}
+.onboarding .text {
+  margin: 40px 0 0;
+}
+.onboarding h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 66px;
+  margin: 0;
+}
+.onboarding p {
+  margin: 16px 0 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 330px;
+  line-height: 28px;
+}
+.onboarding .navigation {
+  margin-top: 145px;
+  z-index: 1;
+  position: absolute;
+  bottom: 80px;
+}
+.onboarding .navigation .number {
+  margin-left: 280px;
+}
+.onboarding .navigation .arrow {
+  cursor: pointer;
+}
+.onboarding .img {
+  position: relative;
+}
+.onboarding .img .main {
+  width: 486px;
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+.onboarding .img .etherium {
+  position: absolute;
+  width: 120px;
+  right: -65px;
+  bottom: 0;
+}
+.onboarding .img .etherium_two {
+  position: absolute;
+  left: -70px;
+  top: 45px;
+  width: 120px;
+}
+
+.step-two .pointer {
+  width: 69px;
+  position: absolute;
+  bottom: 61px;
+  right: 32px;
+}
+
+.step-three .telegram {
+  width: 69px;
+  position: absolute;
+  bottom: 103px;
+  left: 0;
+}
+
+.step-four {
+  background: url(../img/step-four-back.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: block;
+}
+.step-four h1 {
+  text-align: center;
+  z-index: 1;
+}
+.step-four .flex-step-four {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.step-four .flex-step-four .ring {
+  background: rgba(11, 13, 17, 0.9607843137);
+  padding: 60px 62px 60px 64px;
+  border-radius: 50%;
+  width: 292px;
+  height: 292px;
+  position: relative;
+  text-decoration: none;
+}
+.step-four .flex-step-four .ring p {
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 30.36px;
+  font-weight: 600;
+  margin: 0;
+  padding-top: 100px;
+}
+.step-four .flex-step-four .ring .arrow {
+  position: absolute;
+  right: 60px;
+}
+.step-four .flex-step-four .sign_up {
+  padding: 46px 45px 43px 48px;
+  width: 223px;
+  height: 223px;
+  background-color: transparent;
+  border: 1px solid #0b0d11;
+}
+.step-four .flex-step-four .sign_up p {
+  font-size: 20px;
+  color: #0c0e13;
+  line-height: 25.3px;
+  padding-top: 80px;
+}
+.step-four .flex-step-four .sign_up .arrow {
+  position: absolute;
+  right: 40px;
+}
+
+.onboarding-adaptive {
+  display: none;
+}
+
+.transition,
+.transition-mobile {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.transition--visible,
+.transition-mobile--visible {
+  opacity: 1;
+  visibility: visible;
+}
+.transition--visible .img .main,
+.transition-mobile--visible .img .main {
+  transform: scale(1);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+    position: relative;
+  }
+  .main {
+    width: 60%;
+    transform: scale(0.9) translateX(-50%);
+    transition: 0.3s;
+    position: relative;
+    left: 50%;
+  }
+  .transition--visible,
+.transition-mobile--visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .transition--visible .img .main,
+.transition-mobile--visible .img .main {
+    transform: scale(1) translateX(-50%);
+  }
+  .onboarding {
+    display: none;
+  }
+  .next {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  .step-one-adaptive {
+    margin-top: 0px;
+  }
+  .top-block {
+    height: 70%;
+    grid-template-columns: 1fr;
+  }
+  .onboarding-adaptive {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: calc(100% - 40px);
+    display: block;
+  }
+  .onboarding-adaptive .logo {
+    background-color: #15181e;
+    padding: 15px 21px 15px 20px;
+    border-radius: 12px;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 50px;
+    z-index: 1;
+  }
+  .onboarding-adaptive .gradient-adaptive {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+  }
+  .onboarding-adaptive .text {
+    margin: 24px 10px 132px;
+  }
+  .onboarding-adaptive .text h1 {
+    color: #fff;
+    font-size: 3.6vh;
+    font-weight: 700;
+    line-height: 3.6vh;
+    margin: 0;
+  }
+  .onboarding-adaptive .text p {
+    margin: 16px 0 0;
+    color: #fff;
+    font-size: 2.4vh;
+    font-weight: 400;
+    max-width: 330px;
+    line-height: 2.4vh;
+  }
+  .onboarding-adaptive .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    bottom: 40px;
+  }
+  .onboarding-adaptive .navigation .number {
+    width: 8vh;
+  }
+  .onboarding-adaptive .navigation .next {
+    width: 95px;
+    height: 95px;
+  }
+  .onboarding-adaptive .navigation .next img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .onboarding-adaptive .step-one {
+    width: 352px;
+  }
+  .onboarding-adaptive .img {
+    position: relative;
+  }
+  .onboarding-adaptive .img .etherium {
+    position: absolute;
+    width: 80.35px;
+    right: -4px;
+    bottom: -10px;
+  }
+  .onboarding-adaptive .img .etherium-two {
+    position: absolute;
+    width: 63px;
+    left: -23px;
+    bottom: 70px;
+  }
+  .step-two-adaptive .pointer {
+    position: absolute;
+    width: 69px;
+    bottom: 50px;
+    right: 0;
+  }
+  .step-three-adaptive .telegram {
+    position: absolute;
+    width: 64px;
+    bottom: 50px;
+    left: -10px;
+  }
+  .step-four-adaptive {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    width: calc(100% + 40px);
+  }
+  .step-four-adaptive .background {
+    position: absolute;
+    right: -320px;
+    bottom: -350px;
+    width: 877px;
+  }
+  .step-four-adaptive .navigation {
+    position: absolute;
+    bottom: 140px;
+    left: 30px;
+  }
+  .step-four-adaptive h1 {
+    font-size: 4.6vh;
+    color: #fff;
+    line-height: 4.6vh;
+    font-weight: 700;
+    text-align: center;
+    margin: 114px 0 102px;
+  }
+  .step-four-adaptive .flex-step-four .ring_adaptive {
+    position: absolute;
+    left: -19px;
+    bottom: 145px;
+  }
+  .step-four-adaptive .flex-step-four .ring {
+    background: rgba(11, 13, 17, 0.9607843137);
+    padding: 60px 62px 60px 64px;
+    border-radius: 50%;
+    width: 262px;
+    height: 262px;
+    position: absolute;
+    display: block;
+    text-decoration: none;
+    border: 1px solid #000000;
+  }
+  .step-four-adaptive .flex-step-four .ring p {
+    font-size: 2.4vh;
+    color: #ffffff;
+    line-height: 2.4vh;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 100px;
+  }
+  .step-four-adaptive .flex-step-four .ring .arrow {
+    position: absolute;
+    right: 60px;
+  }
+  .step-four-adaptive .flex-step-four .to_go {
+    bottom: 90px;
+    right: -35px;
+  }
+  .step-four-adaptive .flex-step-four .sign_up {
+    padding: 46px 45px 43px 48px;
+    width: 223px;
+    height: 223px;
+    background-color: transparent;
+    border: 1px solid #0b0d11;
+    left: -10px;
+    bottom: 255px;
+  }
+  .step-four-adaptive .flex-step-four .sign_up p {
+    font-size: 2.4vh;
+    color: #0c0e13;
+    line-height: 2.4vh;
+    padding-top: 80px;
+  }
+  .step-four-adaptive .flex-step-four .sign_up .arrow {
+    position: absolute;
+    right: 40px;
+  }
+  .step-four-adaptive.transition-mobile--visible .background {
+    -webkit-animation: fade-up 0.5s forwards;
+            animation: fade-up 0.5s forwards;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+}
+@media screen and (max-width: 550px) {
+  .main {
+    width: 90%;
+  }
+}
+@-webkit-keyframes fade-up {
+  0% {
+    right: -320px;
+    bottom: -350px;
+    position: absolute;
+  }
+  100% {
+    right: -157px;
+    bottom: -192px;
+    position: absolute;
+  }
+}
+@keyframes fade-up {
+  0% {
+    right: -320px;
+    bottom: -350px;
+    position: absolute;
+  }
+  100% {
+    right: -157px;
+    bottom: -192px;
+    position: absolute;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,455 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body {
-        background: #000;
-      }
 
-      svg {
-        max-width: 100%;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./scss/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.css" />
+  <title>Dtx</title>
+</head>
 
-      .text-content {
-        width: 100%;
-      }
+<body>
+  <div class="container-desktop">
+    <div class="onboarding step-one transition transition--visible" data-index="0">
+      <img class="back" src="./img/desktop-mobile-button.png" alt="" />
 
-      svg foreignObject {
-        width: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <svg height="200" viewBox="0 0 550 200" xmlns="http://www.w3.org/2000/svg">
-      <style>
-        div {
-          color: rgb(0, 0, 0);
-          font-size: 25px;
-          font-family: sans-serif;
-          height: 100%;
+      <div class="text">
+        <h1>Обмінюй безкоштовно</h1>
+        <p>7 днів - 0% комісій на обмін криптовалют у всіх напрямках</p>
 
-          padding: 25px 75px 25px 150px;
-          border-radius: 15px;
-          box-sizing: border-box;
-          display: flex;
-          align-items: center;
-          width: 100%;
-        }
-      </style>
+        <div class="navigation">
+          <button class="next" data-next-index="1">
+            <img class="arrow" src="./img/arrow.svg" alt="" />
+          </button>
 
-      <rect
-        rx="25"
-        ry="25"
-        x="0"
-        y="0"
-        height="165"
-        fill="#fff"
-        class="text-content"
-      />
-      <g clip-path="url(#clip0_410_623610)">
-        <rect x="40" y="40" width="80" height="82" rx="8" fill="#29785B"></rect>
-      </g>
-      <!-- Common use case: embed HTML text into SVG -->
-      <foreignObject x="0" y="0" height="165">
-        <!--
-      In the context of SVG embedded in an HTML document, the XHTML
-      namespace could be omitted, but it is mandatory in the
-      context of an SVG document
-    -->
-        <div xmlns="http://www.w3.org/1999/xhtml">
-          <span>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          </span>
+          <img class="number" src="./img/Component.svg" alt="" />
         </div>
-      </foreignObject>
+      </div>
+      <div class="img">
+        <img class="main" src="./img/step-one.png" alt="" />
 
-      <text></text>
+        <img class="etherium" src="./img/etherium-two.png" alt="" />
+        <img class="etherium_two" src="./img/etherium.png" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="container-desktop">
+    <div class="onboarding step-two transition" data-index="1">
+      <img class="back" src="./img/desktop-mobile-button.png" alt="" />
 
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M456.542 66.8055C455.468 65.7315 453.727 65.7315 452.653 66.8055C451.579 67.8794 451.579 69.6206 452.653 70.6945L460.405 78.4462H440.75C439.231 78.4462 438 79.6774 438 81.1962C438 82.715 439.231 83.9462 440.75 83.9462H460.307L452.653 91.6002C451.579 92.6742 451.579 94.4154 452.653 95.4893C453.727 96.5633 455.468 96.5633 456.542 95.4893L468.94 83.0919C470.013 82.018 470.013 80.2768 468.94 79.2028L456.542 66.8055Z"
-        fill="#323232"
-        transform="translate(50, 0)"
-      ></path>
+      <div class="text">
+        <h1>
+          Обмінюйте криптовалюту <br />
+          в кілька кліків
+        </h1>
+        <p>Це швидко, просто та анонімно.</p>
 
-      <defs>
-        <filter
-          id="filter0_f_410_623610"
-          x="9.59294"
-          y="121.837"
-          width="142.541"
-          height="23.2463"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
-        >
-          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="BackgroundImageFix"
-            result="shape"
-          ></feBlend>
-          <feGaussianBlur
-            stdDeviation="0.50236"
-            result="effect1_foregroundBlur_410_623610"
-          ></feGaussianBlur>
-        </filter>
-        <filter
-          id="filter1_d_410_623610"
-          x="83.2861"
-          y="68.2744"
-          width="24.3617"
-          height="24.7428"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
-        >
-          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          ></feColorMatrix>
-          <feOffset dx="0.381272" dy="0.762545"></feOffset>
-          <feComposite in2="hardAlpha" operator="out"></feComposite>
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0.791667 0 0 0 0 0.489223 0 0 0 0 0.319965 0 0 0 0.3 0"
-          ></feColorMatrix>
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow_410_623610"
-          ></feBlend>
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow_410_623610"
-            result="shape"
-          ></feBlend>
-        </filter>
-        <filter
-          id="filter2_d_410_623610"
-          x="82.8848"
-          y="67.873"
-          width="25.1635"
-          height="25.5453"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
-        >
-          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          ></feColorMatrix>
-          <feOffset dx="0.381272" dy="0.762545"></feOffset>
-          <feComposite in2="hardAlpha" operator="out"></feComposite>
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0.791667 0 0 0 0 0.489223 0 0 0 0 0.319965 0 0 0 0.3 0"
-          ></feColorMatrix>
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow_410_623610"
-          ></feBlend>
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow_410_623610"
-            result="shape"
-          ></feBlend>
-        </filter>
-        <filter
-          id="filter3_d_410_623610"
-          x="51.3867"
-          y="68.2744"
-          width="24.3617"
-          height="24.7428"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
-        >
-          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          ></feColorMatrix>
-          <feOffset dx="0.381272" dy="0.762545"></feOffset>
-          <feComposite in2="hardAlpha" operator="out"></feComposite>
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0.791667 0 0 0 0 0.489223 0 0 0 0 0.319965 0 0 0 0.3 0"
-          ></feColorMatrix>
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow_410_623610"
-          ></feBlend>
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow_410_623610"
-            result="shape"
-          ></feBlend>
-        </filter>
-        <filter
-          id="filter4_d_410_623610"
-          x="50.9854"
-          y="67.873"
-          width="25.1635"
-          height="25.5453"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
-        >
-          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          ></feColorMatrix>
-          <feOffset dx="0.381272" dy="0.762545"></feOffset>
-          <feComposite in2="hardAlpha" operator="out"></feComposite>
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0.791667 0 0 0 0 0.489223 0 0 0 0 0.319965 0 0 0 0.3 0"
-          ></feColorMatrix>
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow_410_623610"
-          ></feBlend>
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow_410_623610"
-            result="shape"
-          ></feBlend>
-        </filter>
-        <radialGradient
-          id="paint0_radial_410_623610"
-          cx="0"
-          cy="0"
-          r="1"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(80.8633 133.46) rotate(90) scale(8.0008 52.9438)"
-        >
-          <stop></stop>
-          <stop offset="1" stop-opacity="0"></stop>
-        </radialGradient>
-        <linearGradient
-          id="paint1_linear_410_623610"
-          x1="79.5164"
-          y1="90.4185"
-          x2="79.5164"
-          y2="122.905"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#FFC37B"></stop>
-          <stop offset="1" stop-color="#FFB469"></stop>
-        </linearGradient>
-        <linearGradient
-          id="paint2_linear_410_623610"
-          x1="53.1306"
-          y1="67.8172"
-          x2="109.178"
-          y2="114.713"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#FFC37B"></stop>
-          <stop offset="1" stop-color="#FFA750"></stop>
-        </linearGradient>
-        <radialGradient
-          id="paint3_radial_410_623610"
-          cx="0"
-          cy="0"
-          r="1"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(62.4299 70.4356) rotate(0.249075) scale(20.1999 23.6796)"
-        >
-          <stop stop-color="#FFFACF"></stop>
-          <stop offset="1"></stop>
-        </radialGradient>
-        <linearGradient
-          id="paint4_linear_410_623610"
-          x1="98.9133"
-          y1="46.2202"
-          x2="98.9133"
-          y2="67.6658"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#FFC37B"></stop>
-          <stop offset="1" stop-color="#FFB362"></stop>
-        </linearGradient>
-        <linearGradient
-          id="paint5_linear_410_623610"
-          x1="59.4056"
-          y1="67.0413"
-          x2="52.9511"
-          y2="51.6338"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#FCAE66"></stop>
-          <stop offset="1" stop-color="#FFB469"></stop>
-        </linearGradient>
-        <linearGradient
-          id="paint6_linear_410_623610"
-          x1="82.7511"
-          y1="78.542"
-          x2="82.6668"
-          y2="77.5356"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#33549A"></stop>
-          <stop offset="1" stop-color="#6C6AE0"></stop>
-        </linearGradient>
-        <linearGradient
-          id="paint7_linear_410_623610"
-          x1="89.9023"
-          y1="72.2495"
-          x2="98.2216"
-          y2="78.6079"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="white"></stop>
-          <stop offset="1" stop-color="white" stop-opacity="0"></stop>
-        </linearGradient>
-        <linearGradient
-          id="paint8_linear_410_623610"
-          x1="54.4881"
-          y1="115.399"
-          x2="45.2639"
-          y2="111.395"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="white"></stop>
-          <stop offset="1" stop-color="white" stop-opacity="0"></stop>
-        </linearGradient>
-        <linearGradient
-          id="paint9_linear_410_623610"
-          x1="81.4384"
-          y1="76.8503"
-          x2="91.8171"
-          y2="75.4637"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="white"></stop>
-          <stop offset="1" stop-color="white" stop-opacity="0"></stop>
-        </linearGradient>
-        <linearGradient
-          id="paint10_linear_410_623610"
-          x1="70.0557"
-          y1="101.942"
-          x2="62.1169"
-          y2="103.305"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="white"></stop>
-          <stop offset="1" stop-color="white" stop-opacity="0"></stop>
-        </linearGradient>
-        <linearGradient
-          id="paint11_linear_410_623610"
-          x1="106.435"
-          y1="78.7424"
-          x2="84.6286"
-          y2="78.3011"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#9C9C9C"></stop>
-          <stop offset="1" stop-color="#9C9C9C" stop-opacity="0"></stop>
-        </linearGradient>
-        <linearGradient
-          id="paint12_linear_410_623610"
-          x1="117.603"
-          y1="105.754"
-          x2="86.8188"
-          y2="104.59"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="white"></stop>
-          <stop offset="1" stop-color="white" stop-opacity="0"></stop>
-        </linearGradient>
-        <linearGradient
-          id="paint13_linear_410_623610"
-          x1="104.088"
-          y1="89.1686"
-          x2="85.406"
-          y2="72.202"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#33549A"></stop>
-          <stop offset="1" stop-color="#6C6AE0"></stop>
-        </linearGradient>
-        <linearGradient
-          id="paint14_linear_410_623610"
-          x1="74.5352"
-          y1="78.7424"
-          x2="52.7292"
-          y2="78.3011"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#9C9C9C"></stop>
-          <stop offset="1" stop-color="#9C9C9C" stop-opacity="0"></stop>
-        </linearGradient>
-        <linearGradient
-          id="paint15_linear_410_623610"
-          x1="85.7032"
-          y1="105.754"
-          x2="54.9193"
-          y2="104.59"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="white"></stop>
-          <stop offset="1" stop-color="white" stop-opacity="0"></stop>
-        </linearGradient>
-        <linearGradient
-          id="paint16_linear_410_623610"
-          x1="72.189"
-          y1="89.1686"
-          x2="53.5066"
-          y2="72.202"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#33549A"></stop>
-          <stop offset="1" stop-color="#6C6AE0"></stop>
-        </linearGradient>
-        <clipPath id="clip0_410_623610">
-          <rect x="40" y="40" width="80" height="82" rx="8" fill="white"></rect>
-        </clipPath>
-      </defs>
-    </svg>
+        <div class="navigation">
+          <button class="next" data-next-index="2">
+            <img class="arrow" src="./img/arrow.svg" alt="" />
+          </button>
 
-    <button data-length="5">5 words</button>
-    <button data-length="10">10 words</button>
-    <button data-length="15">15 words</button>
-    <button data-length="20">20 words</button>
+          <img class="number" src="./img/component-two.svg" alt="" />
+        </div>
+      </div>
+      <div class="img">
+        <img class="main" src="./img/step-two.png" alt="" />
 
-    <script>
-      const words =
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde cupiditate blanditiis quos sunt quam illo quis rem, recusandae minus. Dolor sit amet quis sunt.".split(
-          " "
-        );
+        <img class="pointer" src="./img/pointer.png" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="container-desktop">
+    <div class="onboarding step-three transition" data-index="2">
+      <img class="back" src="./img/desktop-mobile-button.png" alt="" />
 
-      const svg = document.querySelector("svg");
-      const textContainer = document.querySelector("foreignObject div span");
+      <div class="text">
+        <h1>
+          Слідкуйте <br />
+          за курсами обміну криптовалют
+        </h1>
+        <p>Підпишіться на наш Telegram канал.</p>
 
-      const buttons = document.querySelectorAll("button");
+        <div class="navigation">
+          <button class="next" data-next-index="3">
+            <img class="arrow" src="./img/arrow.svg" alt="" />
+          </button>
+          <img class="number" src="./img/component-three.svg" alt="" />
+        </div>
+      </div>
+      <div class="img">
+        <img class="main" src="./img/step-three.png" alt="" />
 
-      buttons.forEach((button) => {
-        button.addEventListener("click", (e) => {
-          const length = button.getAttribute("data-length");
-          textContainer.textContent = words.slice(0, length).join(" ");
-        });
-      });
-    </script>
-  </body>
+        <img class="telegram" src="./img/telegram.png" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="container-desktop">
+    <div class="onboarding step-four transition" data-index="3">
+      <h1>
+        Зробіть вибір <br />
+        прямо зараз
+      </h1>
+      <div class="flex-step-four">
+        <a href="#" class="ring to_go">
+          <img class="arrow" src="./img/Vector.svg" alt="" />
+          <p>Пройти реєстрацію</p>
+        </a>
+
+        <a href="#" class="ring sign_up">
+          <img class="arrow" src="./img/VectorBlack.svg" alt="" />
+          <p>Підписатися на Telegram</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="fullpage">
+    <div class="onboarding-adaptive step-one-adaptive transition-mobile transition-mobile--visible" data-index="0">
+      <div class="logo">
+        <img src="./img/logo.svg" alt="" />
+      </div>
+      <div class="top-block">
+        <div class="img">
+          <img class="main" src="./img/step-one.png" alt="" />
+          <img class="etherium" src="./img/etherium-two.png" alt="" />
+          <img class="etherium-two" src="./img/etherium.png" alt="" />
+        </div>
+
+        <div class="text">
+          <h1>
+            Обмінюй <br />
+            безкоштовно
+          </h1>
+          <p>7 днів - 0% комісій на обмін криптовалют у всіх напрямках</p>
+        </div>
+      </div>
+      <div class="navigation">
+        <img class="number" src="./img/Component.svg" alt="" />
+        <button class="next" data-next-index="1">
+          <img class="arrow" src="./img/arrow.svg" alt="" />
+        </button>
+      </div>
+      <img class="gradient-adaptive" src="./img/gradient_adaptive.png" alt="" />
+    </div>
+
+    <div class="onboarding-adaptive step-two-adaptive transition-mobile" data-index="1">
+      <div class="logo">
+        <img src="./img/logo.svg" alt="" />
+      </div>
+      <div class="img">
+        <img class="main" src="./img/step-two.png" alt="" />
+        <img class="pointer" src="./img/pointer.png" alt="" />
+      </div>
+
+      <div class="text">
+        <h1>
+          Обмінюйте <br />
+          криптовалюту<br />
+          в кілька кліків
+        </h1>
+        <p>Це швидко, просто та анонімно.</p>
+      </div>
+      <div class="navigation">
+        <img class="number" src="./img/component-two.svg" alt="" />
+        <button class="next" data-next-index="2">
+          <img class="arrow" src="./img/arrow.svg" alt="" />
+        </button>
+      </div>
+      <img class="gradient-adaptive" src="./img/gradient_adaptive_step-two.png" alt="" />
+    </div>
+
+    <div class="onboarding-adaptive step-three-adaptive transition-mobile" data-index="2">
+      <div class="logo">
+        <img src="./img/logo.svg" alt="" />
+      </div>
+      <div class="img">
+        <img class="main" src="./img/step-three.png" alt="" />
+        <img class="telegram" src="./img/telegram.png" alt="" />
+      </div>
+
+      <div class="text">
+        <h1>
+          Слідкуйте <br />
+          за курсами обміну криптовалют
+        </h1>
+        <p>Підпишіться на наш Telegram канал.</p>
+      </div>
+      <div class="navigation">
+        <img class="number" src="./img/component-three.svg" alt="" />
+        <button class="next" data-next-index="3">
+          <img class="arrow" src="./img/arrow.svg" alt="" />
+        </button>
+      </div>
+
+      <img class="gradient-adaptive" src="./img/gradient_adaptive_step-three.png" alt="" />
+    </div>
+
+    <div class="onboarding-adaptive step-four-adaptive transition-mobile" data-index="3">
+      <img class="background" src="./img/Gradient-adaptive-four.png" alt="" />
+      <div class="logo">
+        <img src="./img/logo.svg" alt="" />
+      </div>
+
+      <h1>
+        Зробіть вибір <br />
+        прямо зараз
+      </h1>
+
+      <div class="flex-step-four">
+        <a href="#" class="ring sign_up">
+          <img class="arrow" src="./img/VectorBlack.svg" alt="" />
+          <p>Підписатися на Telegram</p>
+        </a>
+
+        <a href="#" class="ring to_go">
+          <img class="arrow" src="./img/Vector.svg" alt="" />
+          <p>Пройти реєстрацію</p>
+        </a>
+      </div>
+      <div class="navigation">
+        <img class="number" src="./img/component-four.svg" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.js"></script>
+
+  <script src="./js/script.js"></script>
+</body>
+
 </html>
